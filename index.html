@@ -1,9 +1,11 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>igloobot</title>
-  </head>
-  <body>
-    testing user portal has been changed to https://sites.google.com/iglooinsure.com/iglooboten/home
-  </body>
-</html>
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger-cx/bootstrap.js?v=1">
+const dfMessenger = document.querySelector('df-messenger');
+dfMessenger.renderCustomText('hi what can I do for you?');
+</script>
+<df-messenger
+  df-cx="true"
+  location="us-central1"
+  chat-title="Igloobot-consulting"
+  agent-id="8b15c492-8213-45d7-ad1a-56d34f214a06"
+  language-code="en"
+></df-messenger>
