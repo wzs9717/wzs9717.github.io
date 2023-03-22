@@ -1,10 +1,5 @@
 <script src="https://www.gstatic.com/dialogflow-console/fast/messenger-cx/bootstrap.js?v=1"></script>
-<script>
-  const dfMessenger = document.querySelector('df-messenger');
-  dfMessenger.addEventListener('df-messenger-loaded', function () {
-    dfMessenger.renderCustomText('hi what can I do for you?');
-  });
-</script>
+
 
 <df-messenger
   df-cx="true"
@@ -13,3 +8,12 @@
   agent-id="8b15c492-8213-45d7-ad1a-56d34f214a06"
   language-code="en"
 ></df-messenger>
+
+
+<script>
+  const dfMessenger = document.querySelector('df-messenger');
+  dfMessenger.addEventListener('df-messenger-loaded', function() {  
+    dfMessenger.renderCustomText("hi Igloobot here! Do you have any questions like 'what is comprehensive?' or 'does this policy cover cancer?");
+  })
+
+</script>
