@@ -1,7 +1,11 @@
-<script src="https://www.gstatic.com/dialogflow-console/fast/messenger-cx/bootstrap.js?v=1">
-const dfMessenger = document.querySelector('df-messenger');
-dfMessenger.renderCustomText('hi what can I do for you?');
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger-cx/bootstrap.js?v=1"></script>
+<script>
+  const dfMessenger = document.querySelector('df-messenger');
+  dfMessenger.addEventListener('df-messenger-ready', function () {
+    dfMessenger.renderCustomText('hi what can I do for you?');
+  });
 </script>
+
 <df-messenger
   df-cx="true"
   location="us-central1"
